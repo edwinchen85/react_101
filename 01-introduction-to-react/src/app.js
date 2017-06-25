@@ -3,7 +3,11 @@ const css = require('./app.scss');
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+const App = () => {
+  return <h1>Hello World!</h1>
+}
+
 ReactDOM.render(
-  <div><h1>Hello World!</h1><p>Test rendering</p></div>,
+  <App />,
   document.getElementById('root')
 );
