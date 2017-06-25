@@ -28,7 +28,7 @@ export class App extends React.Component {
         <header>
           <h1>Shopping List</h1>
 
-          <form className="form-inline" onSubmit={(e) => {this.addItem(e)}}>
+          <form ref={input => this.addForm = input} className="form-inline" onSubmit={(e) => {this.addItem(e)}}>
             <div className="form-group">
               <label className="sr-only" htmlFor="newItemInput">Add New Item</label>
               <input ref={input => this.newItem = input} type="text" placeholder="Bread" className="form-control" id="newItemInput" />
