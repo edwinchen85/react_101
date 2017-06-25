@@ -16,7 +16,7 @@ export class App extends React.Component {
     const {buyItems} = this.state;
     const newItem = this.newItem.value;
 
-    this.setState({
+    newItem !== '' && this.setState({
       buyItems: [...this.state.buyItems, newItem]
     })
 
