@@ -10,13 +10,15 @@ const Greeting = (props) => {
   return <p>You will love it {name} ({age})!</p>
 }
 
-export const App = () => {
-  return (
-    <div>
-      <Headline />
-      <Greeting name="Edwin" age={25} />
-    </div>
-  )
+export class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Headline />
+        <Greeting name="Edwin" age={25} />
+      </div>
+    )
+  }
 }
 
 Greeting.propTypes = {
