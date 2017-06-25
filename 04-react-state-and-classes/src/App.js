@@ -12,7 +12,14 @@ export class App extends React.Component {
 
   render() {
     return (
-      <h1>Shopping List</h1>
+      <div>
+        <h1>Shopping List</h1>
+        {
+          this.state.buyItems.map(item => {
+            return <p>{item}</p>
+          })
+        }
+      </div>
     )
   }
 }
