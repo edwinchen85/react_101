@@ -4,10 +4,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const App = () => {
-  return <div>
-    <h1 className="title">Hello World!</h1>
-    <p>Testing rendering with JSX.</p>
-  </div>
+  return (
+    <div>
+      <h1 className="title">Hello World!</h1>
+      <p>Testing rendering with JSX.</p>
+    </div>
+  )
 }
 
 ReactDOM.render(
