@@ -33,7 +33,13 @@ export class App extends React.Component {
   }
 
   removeItem (item) {
-    console.log('remove ' + item);
+    const newBuyItems = this.state.buyItems.filter(buyItem => {
+      return buyItem !== item;
+    });
+
+    this.setState({
+      buyItems: [...newBuyItems]
+    })
   }
 
   render() {
