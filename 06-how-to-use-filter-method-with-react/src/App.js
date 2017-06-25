@@ -6,7 +6,8 @@ export class App extends React.Component {
     // super is a keyword that used to called functions on an object's parent
     super(props);
     this.state = {
-      buyItems: ['milk', 'bread', 'food']
+      buyItems: ['milk', 'bread', 'food'],
+      message: ''
     }
   }
 
