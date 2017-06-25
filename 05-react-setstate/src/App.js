@@ -13,7 +13,7 @@ export class App extends React.Component {
   addItem(e) {
     e.preventDefault();
     const {buyItems} = this.state;
-    const newItem = 'test';
+    const newItem = this.newItem.value;
 
     this.setState({
       buyItems: [...this.state.buyItems, newItem]
