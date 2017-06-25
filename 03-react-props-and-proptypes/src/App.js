@@ -5,14 +5,14 @@ const Headline = () => {
 }
 
 const Greeting = (props) => {
-  return <p>You will love it {props.name}!</p>
+  return <p>You will love it {props.name} ({props.age})!</p>
 }
 
 export const App = () => {
   return (
     <div>
       <Headline />
-      <Greeting name="Edwin" />
+      <Greeting name="Edwin" age={25} />
     </div>
   )
 }
