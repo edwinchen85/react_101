@@ -24,7 +24,8 @@ export class App extends React.Component {
       })
     } else {
       newItem !== '' && this.setState({
-        buyItems: [...this.state.buyItems, newItem]
+        buyItems: [...this.state.buyItems, newItem],
+        message: ''
       })
     }
 
