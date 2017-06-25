@@ -32,6 +32,10 @@ export class App extends React.Component {
     this.addForm.reset();
   }
 
+  removeItem (item) {
+    console.log('remove ' + item);
+  }
+
   render() {
     const {buyItems, message} = this.state;
 
