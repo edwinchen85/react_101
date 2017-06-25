@@ -18,6 +18,8 @@ export class App extends React.Component {
     this.setState({
       buyItems: [...this.state.buyItems, newItem]
     })
+
+    this.addForm.reset();
   }
 
   render() {
