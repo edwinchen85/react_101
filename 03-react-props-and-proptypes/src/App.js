@@ -5,7 +5,8 @@ const Headline = () => {
 }
 
 const Greeting = (props) => {
-  return <p>You will love it {props.name} ({props.age})!</p>
+  const {name, age} = props;
+  return <p>You will love it {name} ({age})!</p>
 }
 
 export const App = () => {
