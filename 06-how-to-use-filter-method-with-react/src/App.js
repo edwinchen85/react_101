@@ -73,7 +73,11 @@ export class App extends React.Component {
                     <tr key={item}>
                       <th scope="row">1</th>
                       <td>{item}</td>
-                      <td>Button</td>
+                      <td className="text-right">
+                        <button onClick={(e) => this.removeItem(item)} type="button" className="btn btn-default btn-sm">
+                          Remove
+                        </button>
+                      </td>
                     </tr>
                   )
                 })
