@@ -11,11 +11,13 @@ export class App extends React.Component {
   }
 
   render() {
+    const {buyItems} = this.state;
+
     return (
       <div>
         <h1>Shopping List</h1>
         {
-          this.state.buyItems.map(item => {
+          buyItems.map(item => {
             return <p key={item}>{item}</p>
           })
         }
