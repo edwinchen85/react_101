@@ -16,9 +16,17 @@ export class App extends React.Component {
     const {buyItems} = this.state;
     const newItem = this.newItem.value;
 
-    newItem !== '' && this.setState({
-      buyItems: [...this.state.buyItems, newItem]
-    })
+    const isOnTheList = buyItems.includes(newItem);
+
+    if (isOnTheList) {
+      this.setState({
+        message: 'This item is already on the list.'
+      })
+    } else {
+      newItem !== '' && this.setState({
+        buyItems: [...this.state.buyItems, newItem]
+      })
+    }
 
     this.addForm.reset();
   }
