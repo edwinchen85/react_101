@@ -32,7 +32,7 @@ export class App extends React.Component {
   }
 
   render() {
-    const {buyItems} = this.state;
+    const {buyItems, message} = this.state;
 
     return (
       <div>
@@ -49,6 +49,9 @@ export class App extends React.Component {
 
         </header>
         <div className="content">
+          {
+            message !== '' && <p className="message text-danger">{message}</p>
+          }
           <table className="table">
             <caption>Shopping List</caption>
             <thead>
