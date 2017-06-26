@@ -48,6 +48,13 @@ export class App extends React.Component {
     }
   }
 
+  clearAll() {
+    this.setState({
+      buyItems: [],
+      message: 'No items on your list, add some.'
+    })
+  }
+
   render() {
     const {buyItems, message} = this.state;
 
