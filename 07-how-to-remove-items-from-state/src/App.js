@@ -97,6 +97,14 @@ export class App extends React.Component {
                   })
                 }
               </tbody>
+              <tfoot>
+                <tr>
+                  <td colSpan="2">&nbsp;</td>
+                  <td className="text-right">
+                    <button className="btn btn-default btn-sm">Clear list</button>
+                  </td>
+                </tr>
+              </tfoot>
             </table>
           }
         </div>
