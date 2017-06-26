@@ -69,33 +69,36 @@ export class App extends React.Component {
           {
             message !== '' && <p className="message text-danger">{message}</p>
           }
-          <table className="table">
-            <caption>Shopping List</caption>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Item</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {
-                buyItems.map(item => {
-                  return (
-                    <tr key={item}>
-                      <th scope="row">1</th>
-                      <td>{item}</td>
-                      <td className="text-right">
-                        <button onClick={(e) => this.removeItem(item)} type="button" className="btn btn-default btn-sm">
-                          Remove
-                        </button>
-                      </td>
-                    </tr>
-                  )
-                })
-              }
-            </tbody>
-          </table>
+          {
+            buyItems.length > 0 &&
+            <table className="table">
+              <caption>Shopping List</caption>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Item</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  buyItems.map(item => {
+                    return (
+                      <tr key={item}>
+                        <th scope="row">1</th>
+                        <td>{item}</td>
+                        <td className="text-right">
+                          <button onClick={(e) => this.removeItem(item)} type="button" className="btn btn-default btn-sm">
+                            Remove
+                          </button>
+                        </td>
+                      </tr>
+                    )
+                  })
+                }
+              </tbody>
+            </table>
+          }
         </div>
       </div>
     )
