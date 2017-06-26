@@ -70,7 +70,7 @@ export class App extends React.Component {
                   <label className="sr-only" htmlFor="newItemInput">Add New Item</label>
                   <input ref={input => this.newItem = input} type="text" placeholder="Bread" className="form-control" id="newItemInput" />
                 </div>
-                <button type="submit" className="btn btn-primary">Add</button>
+                <button type="submit" className="btn btn-cta">Add</button>
               </form>
 
             </header>
@@ -86,7 +86,7 @@ export class App extends React.Component {
                     <tr>
                       <th>#</th>
                       <th>Item</th>
-                      <th>Action</th>
+                      <th className="text-right">Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -95,7 +95,7 @@ export class App extends React.Component {
                         return (
                           <tr key={item}>
                             <th scope="row">1</th>
-                            <td>{item}</td>
+                            <td className="text-left">{item}</td>
                             <td className="text-right">
                               <button onClick={(e) => this.removeItem(item)} type="button" className="btn btn-default btn-sm">
                                 Remove
