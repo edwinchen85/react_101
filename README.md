@@ -10,3 +10,5 @@ List of tutorials:
 5. React Setstate
 6. How to use filter with React
 7. How to remove items from the state
+
+![Preview](screenshot.png)
