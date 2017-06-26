@@ -101,7 +101,7 @@ export class App extends React.Component {
                 <tr>
                   <td colSpan="2">&nbsp;</td>
                   <td className="text-right">
-                    <button className="btn btn-default btn-sm">Clear list</button>
+                    <button onClick={(e) => this.clearAll()} className="btn btn-default btn-sm">Clear list</button>
                   </td>
                 </tr>
               </tfoot>
