@@ -40,6 +40,12 @@ export class App extends React.Component {
     this.setState({
       buyItems: [...newBuyItems]
     })
+
+    if (newBuyItems.length === 0) {
+      this.setState({
+        message: 'No items on your list, add some.'
+      })
+    }
   }
 
   render() {
