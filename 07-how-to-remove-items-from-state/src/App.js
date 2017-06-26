@@ -67,7 +67,7 @@ export class App extends React.Component {
         </header>
         <div className="content">
           {
-            message !== '' && <p className="message text-danger">{message}</p>
+            (message !== '' || buyItems.length === 0) && <p className="message text-danger">{message}</p>
           }
           {
             buyItems.length > 0 &&
